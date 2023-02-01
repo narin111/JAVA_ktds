@@ -1,0 +1,13 @@
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] ball = new int[45];
+		for(int i=1; i<=45; i++) {
+			ball[i-1] = i;
+		}
+		System.out.println(ball[1]);
+	}
+
+}

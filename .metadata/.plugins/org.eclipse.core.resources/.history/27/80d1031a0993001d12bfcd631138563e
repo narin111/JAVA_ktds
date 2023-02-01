@@ -1,0 +1,8 @@
+package com.kt.entity;
+
+public class TV extends Product{
+	static final int TV_PRICE = 1000;
+	public TV(){
+		super(TV_PRICE);
+	}
+}

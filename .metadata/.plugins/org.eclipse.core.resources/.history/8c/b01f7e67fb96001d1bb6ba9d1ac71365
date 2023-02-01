@@ -1,0 +1,33 @@
+package com.test04;
+
+public class PlaneTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Airplane과 Cargoplane 객체생성
+		Airplane ap = new Airplane("L777", 1000);
+		Cargoplane cp = new Cargoplane("C50", 1000);
+		
+		// 생성된 객체의 정보 출력
+		System.out.println("Plane fuelSize");
+		System.out.println("--------------------");
+		System.out.println(ap.getPlaneName()+" " + ap.getFuelSize());
+		System.out.println(cp.getPlaneName()+" " + cp.getFuelSize());
+		
+		// Airplane과 Cargoplane 객체에 100씩 운항
+		System.out.println("100 운항");
+		System.out.println();
+		ap.flight(100);
+		cp.flight(100);
+		
+		// 운항후 객체의 변경된 정보 출력
+		System.out.println("Plane fuelSize");
+		System.out.println("--------------------");
+		System.out.println(ap.getPlaneName()+" " + ap.getFuelSize());
+		System.out.println(cp.getPlaneName()+" " + cp.getFuelSize());
+		// Airplane과 Cargoplane 객체에 200씩 주유
+		// 주유후 객체의 변경된 정보 출력
+	}
+
+}

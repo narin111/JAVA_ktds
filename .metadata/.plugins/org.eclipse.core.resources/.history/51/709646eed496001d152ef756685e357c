@@ -1,0 +1,13 @@
+package dao;
+
+public class ProjMain {
+	public static void insert() {
+		DBConnect db = new DBConnect();
+		
+		
+		db.conclose();
+	}
+	public static void main(String[] args) {
+		
+	}
+}

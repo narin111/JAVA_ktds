@@ -1,0 +1,13 @@
+import acc.Account;
+
+public class ClassTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account acc2 = new Account(10002, “고길동”, 200000);
+		
+		
+		System.out.println(acc2.info());
+	}
+
+}

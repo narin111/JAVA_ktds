@@ -1,0 +1,8 @@
+package com.test06;
+
+public class VendingMachineBiz{
+	private int balance;
+	Drink[] drk = new Drink[3];
+	private int count=0;
+	
+}

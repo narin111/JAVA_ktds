@@ -1,0 +1,20 @@
+class Number{
+	int m = 10;
+	void method() {
+		
+	}
+}
+
+public class AnonyClassTest {
+	public static void main(String[] args) {
+		new Number() {
+			int n = 20;
+			
+			@Override
+			int method() {
+				return super.method()+n;
+			}
+		};
+		System.out.println(number.method);
+	}
+}

@@ -1,0 +1,16 @@
+package com.kt;
+
+import com.kt.entity.Computer;
+import com.kt.entity.Gogak;
+import com.kt.entity.Refrigerator;
+import com.kt.entity.TV;
+
+public class ShoppingMain {
+	public static void main(String[] args) {
+		Gogak gg = new Gogak(1000000);
+		gg.addProduct(new TV());
+		gg.addProduct(new Computer());
+		gg.addProduct(new Refrigerator());
+		gg.printBasket();
+	}
+}

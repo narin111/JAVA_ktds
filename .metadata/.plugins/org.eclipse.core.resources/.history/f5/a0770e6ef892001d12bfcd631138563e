@@ -1,0 +1,13 @@
+class StaticTest3{
+	static int[] narr = new int[] {10 , 20, 30, 40, 50, 6, 7, 8, 9};
+	
+}
+
+public class StaticTest3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

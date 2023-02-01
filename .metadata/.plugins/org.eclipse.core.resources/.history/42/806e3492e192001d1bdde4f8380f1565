@@ -1,0 +1,23 @@
+package acc;
+
+// public은 다른 패키지에 있는 얘도 허용
+public class Account{
+	public int num;
+	public String name;
+	public int balance;
+	
+	String info() {
+		return "번호:"+num+", 이름:"+name+", 잔액:"+balance;
+	}
+	public void deposit(int money) {
+		if(money>0) {
+			balance += money;
+		}
+	}
+	
+	public void withdraw(int money) {
+		if(balance >= money) {
+			balance -= money;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+
+public class OperTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 10, b = 5;
+		if(a < b && ++b == 6) {
+			
+		}
+		System.out.println(b);
+	}
+
+}

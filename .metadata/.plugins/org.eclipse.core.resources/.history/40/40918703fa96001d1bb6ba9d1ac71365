@@ -1,0 +1,11 @@
+package com.test04;
+
+public class Cargoplane extends Plane{
+	
+	
+	public void flight(int distance) {
+		// 감소한 연료
+		int restFuel =  getFuelSize() - (distance/10)*30;
+		setFuelSize(restFuel);
+	}
+}

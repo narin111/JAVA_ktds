@@ -1,0 +1,38 @@
+package com.kt.entity;
+
+public class Gogak {
+	private int money;
+	private Product[] basket = new Product[5];
+	private int count;
+	
+	public Gogak(int money) {
+		this.money = money;
+	}
+	
+	public void addProduct(Product product) {
+		if(money<product.getPrice()) {
+			System.out.println("잔액부족");
+			return;
+		}
+		
+		if(basket.length <= count) {
+			Product[] newBasket = new Product[basket.length*2];
+			System.arraycopy(product, 0, newBasket, 0, basket.length);
+			basket = newBasket;
+			
+	
+ 		}
+		
+		basket[count++] = product;
+	}
+	
+	public void printBasket() {
+		// 구매 목록과 잔액을 출력
+		// Computer: 1개
+		// TV: 2개
+		// 사용금액: 5000원
+		// 잔액:5000원
+	}
+	
+	
+}

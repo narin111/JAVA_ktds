@@ -1,0 +1,38 @@
+package com.test03;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.test02.Student;
+
+
+public class TestMain03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "1.22,4.12,5.93,8.71,9.34";
+		
+		//StringTokenizer 이용하여 List에 저장한다.
+		// list = StringTokenizer();
+		String[] temp = str.split(",");
+		int tempLen = temp.length;
+		
+		double sum = 0;
+		for(int i=0; i<tempLen; i++) {
+			sum+=Double.parseDouble(temp[i]);
+		}
+
+		
+		//List에 저장된 데이터의 합과 평균을 구한다.
+		// 합계와 평균은 모두 소수점 4자리에서 반올림하여 소수점 3자리까지 표현한다.
+		
+		// 소수 4자리에서 반올림하기위한 계산
+		double calSosu1 = Math.round(sum*1000);
+		System.out.printf("합 계 : %.3f\n", calSosu1/1000);
+		
+		double calSosu2 = Math.round((sum/tempLen)*1000);
+		System.out.printf("평 균 : %.3f", calSosu2/1000);
+
+		
+	}
+
+}

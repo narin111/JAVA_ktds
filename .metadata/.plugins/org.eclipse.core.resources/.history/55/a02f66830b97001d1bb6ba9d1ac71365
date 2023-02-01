@@ -1,0 +1,5 @@
+package com.test06;
+
+public class Juice extends Drink{
+	final int JUICE_PRICE = 200;
+}

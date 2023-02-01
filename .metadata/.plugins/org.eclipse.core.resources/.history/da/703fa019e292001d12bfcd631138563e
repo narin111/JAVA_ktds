@@ -1,0 +1,26 @@
+import acc.Account;
+
+public class ClassTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account acc1 = new Account();
+		acc1.num = 1001;
+		acc1.name = "홍길동";
+		acc1.balance = 100000;
+		
+		System.out.println(acc1.info());
+		// acc1.balance += 10000;
+		acc1.deposit(10000);
+		
+		Account acc2 = new Account();
+		acc2.num = 1001;
+		acc2.name = "홍길동";
+		acc2.balance = 10000;
+		
+		acc2.withdraw(1000);
+		
+		System.out.println(acc2.info());
+	}
+
+}

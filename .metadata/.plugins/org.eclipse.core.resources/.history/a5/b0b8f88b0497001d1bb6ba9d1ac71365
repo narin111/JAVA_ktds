@@ -1,0 +1,22 @@
+package com.test05;
+
+public class Secretary extends Employee implements Bonus{
+
+	public Secretary() {
+		super();
+	}
+	
+	public Secretary(String name, int number, String department, int salary) {
+		super(name, number, department, salary);
+	}
+	
+	public void incentive(int pay) {
+		int incen = getSalary() + (int)(pay*0.2);
+		setSalary(incen);
+	}
+	
+	public double tax() {
+		double taxAmt = getSalary() * 0.1;
+		return taxAmt;
+	}
+}

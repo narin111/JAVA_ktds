@@ -1,0 +1,49 @@
+import acc.Account;
+import acc.SpecialAccount;
+
+public class Bank {
+
+	static Account[] accs = new Account[100];
+	static int count = 0;
+	
+	static void makeAccount(Account acc) {
+		accs[count++] = acc;	
+	}
+	
+	static void printAllAccount() {
+		for(int i=0; i<count; i++) {
+			System.out.println(accs[i].info());
+		}		
+	}
+	
+	static void printSpecialAccount() {
+		for(int i=0; i<count; i++) {
+			if(accs[i] instanceof SpecialAccount) {
+				System.out.println(accs[i].info());
+			}
+		}
+	}
+	
+	static void printSpecialAccount(String grade) {
+		for(int i=0; i<count; i++) {
+			// down casting: grade는 자식거
+			if(accs[i] instanceof SpecialAccount) {
+				SpecialAccount sacc = (SpecialAccount)accs[i];
+				if(sacc.getGrade().equals(grade)) {
+					System.out.println(accs[i].info());
+				}				
+					
+			}
+		}
+	}
+	
+	static void printAccount() {
+		for(int i=0; i<count; i++) {
+			if(accs[i] instanceof SpecialAccount) {
+				System.out.println(accs[i].info());
+			}
+		}
+	}
+	
+
+}

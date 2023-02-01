@@ -1,0 +1,18 @@
+class TempClass{
+	int value;
+	static int svalue;
+}
+
+public class StaticTest {
+	public static void main(String[] args) {
+		
+		TempClass.svalue = 100; // class 이름을 통해 객체 생성 없이도 접근가능
+		System.out.println(TempClass.svalue);
+		
+		TempClass tc = new TempClass();
+		tc.value = 200; // 객체 생성 후 레퍼런스 변수를 통해서만 접근가능
+		System.out.println(tc.value);
+		System.out.println(tc.svalue);
+		
+	}
+}

@@ -1,0 +1,5 @@
+package vehicle;
+
+public class L3 extends Car{
+	
+}

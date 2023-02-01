@@ -1,0 +1,72 @@
+package com.test03;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.test02.Student;
+
+
+
+public class TestMain03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "1.22,4.12,5.93,8.71,9.34";
+		
+		//StringTokenizer 이용하여 List에 저장한다.
+		// list = StringTokenizer();
+		String[] temp = str.split(",");
+		int tempLen = temp.length;
+		
+		double sum = 0;
+		for(int i=0; i<tempLen; i++) {
+			sum+=Double.parseDouble(temp[i]);
+		}
+		
+		// System.out.println("합 계 : " + sum);
+		// System.out.println("평 균 : " + sum/tempLen);
+		
+		//List에 저장된 데이터의 합과 평균을 구한다.
+				// 합계와 평균은 모두 소수점 4자리에서 반올림하여 소수점 3자리까지 표현한다.
+		System.out.printf("합 계 : %.3f\n", sum);
+		System.out.printf("평 균 : %.3f", (Math.round((sum/tempLen)*1000))/1000 );
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
+
+/**
+The following is one example of the use of the tokenizer. The code: 
+
+     StringTokenizer st = new StringTokenizer("this is a test");
+     while (st.hasMoreTokens()) {
+         System.out.println(st.nextToken());
+     }
+ 
+prints the following output: 
+
+     this
+     is
+     a
+     test
+
+     String[] result = "this is a test".split("\\s");
+     for (int x=0; x<result.length; x++)
+         System.out.println(result[x]);
+ 
+prints the following output: 
+
+     this
+     is
+     a
+     test
+ 
+Since:1.0Author:unascribedSee Also:java.io.StreamTokenizer
+**/

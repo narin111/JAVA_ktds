@@ -1,0 +1,24 @@
+package com.kt;
+
+import com.kt.entity.Computer;
+import com.kt.entity.Gogak;
+import com.kt.entity.Refrigerator;
+import com.kt.entity.TV;
+
+public class ShoppingMain {
+	public static void main(String[] args) {
+		Gogak gg = new Gogak(1000000);
+		gg.addProduct(new TV());
+		gg.addProduct(new Computer());
+		gg.addProduct(new Refrigerator());
+		gg.printBasket();
+	}
+	
+	public static void menu() {
+		System.out.println("kt mart");
+		System.out.println("1. 판매목록 및 잔액보기");
+		System.out.println("2. Computer 구매(1000원)");
+		System.out.println("3. TV 구매(2000원)");
+		System.out.println("4. Refrigerator 구매(3000원)");
+	}
+}

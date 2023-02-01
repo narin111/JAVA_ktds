@@ -1,0 +1,16 @@
+import acc.Account;
+import acc.SpecialAccount;
+
+public class AccountTest2 {
+	static Account[] accs = new Account[100];
+	int count = 0;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub		
+		// accs[0] = new Account(101, "홍길동", 10000);
+		// accs[1] = new SpecialAccount(102, "고길동", 2000000, "VIP");
+		makeAccount(new Account(101, "홍길동", 10000));
+		makeAccount(new SpecialAccount(102, "고길동", 2000000, "VIP"));
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.io.IOException;
+
+public class DoWhileTest {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		int input = 0;
+		
+		do {
+			input = System.in.read();
+			System.out.print((char)input);
+		} while(input!=-1 || input !='x');
+	}
+
+}

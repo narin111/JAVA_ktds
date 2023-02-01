@@ -1,0 +1,14 @@
+import acc.SpecialAccount;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SpecialAccount sacc = new SpecialAccount(100, "홍길동", 10000, "VIP");
+		System.out.println(sacc.info());
+		sacc.deposit(10000);
+		System.out.println(sacc.info());
+		
+	}
+
+}

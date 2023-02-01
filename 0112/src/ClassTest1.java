@@ -1,0 +1,31 @@
+class Person{
+	int age;
+	String name;
+	double height; // heap 영역에
+	
+	String info() {
+		return "이름:" +name+", 나이:"+age+", 키:"+ height;
+	}
+}
+
+public class ClassTest1 {
+	public static void personInfo(Person p2) {
+		p2.age = 40;
+		System.out.println(p2.info());
+	}
+	public static void main(String[] args) {
+		Person p = new Person();
+		p.age = 20;
+		p.name = "홍길등";
+		p.height = 175.3;
+		
+//		Person p2 = p;
+//		p2.age = 30;
+//		
+//		System.out.println(p.info());
+//		System.out.println(p2.info());
+		// 호출시에 생기고 끝나면 변수들 없어진다 (stack 변수들)
+		personInfo(p);
+		System.out.println(p.info());
+	}
+}

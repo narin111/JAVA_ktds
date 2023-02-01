@@ -1,0 +1,9 @@
+package com.kt.entity;
+
+public class Refrigerator extends Product{
+	static final int REFRIGERATOR_PRICE = 1000;
+	public Refrigerator(){
+		super(REFRIGERATOR_PRICE);
+	}
+	
+}

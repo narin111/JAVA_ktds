@@ -1,0 +1,27 @@
+
+public class Array2DTest {
+	public static void main(String[] args) {
+		int [][] arry2 = new int[][] {
+			{10, 20, 30,40},
+			{1, 2, 3, 4},
+			{100, 200, 300, 400},
+			{111, 222, 333, 444}
+			
+		};
+		int sum1 = 0, sum2=0;
+		int[] col = new int[4];
+		
+		for(int i=0; i<4; i++) {
+			for(int j=0; j<4; j++) {
+				sum1+=arry2[i][j];
+				col[i]+=arry2[i][j];
+			}
+			System.out.println("행"+i+": "+sum1);
+			sum1=0;
+		}
+		
+		for(int i=0; i<4; i++) {
+			System.out.println("열"+i+": "+col[i]);
+		}
+	}
+}

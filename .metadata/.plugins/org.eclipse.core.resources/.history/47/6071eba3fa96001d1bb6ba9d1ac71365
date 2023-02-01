@@ -1,0 +1,15 @@
+package com.test04;
+
+public class Airplane extends Plane{
+	
+	public Airplane() {}
+	public Airplane(String planeName, int fuelSize) {
+		super(planeName, fuelSize);
+	}
+
+	public void flight(int distance) {
+		// 감소한 연료
+		int restFuel =  getFuelSize() - (distance/10)*30;
+		setFuelSize(restFuel);
+	}
+}

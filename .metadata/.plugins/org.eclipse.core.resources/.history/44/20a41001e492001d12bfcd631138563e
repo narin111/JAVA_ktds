@@ -1,0 +1,25 @@
+class Calculator{
+	// int number;
+	int val1;
+	int val2;
+	
+	int add() {
+		return val1+val2;
+	}
+	
+	int add(int data1, int data2) {
+		return data1 + data2;
+	}
+}// 시험문제?
+
+public class MethodTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator cal = new Calculator();
+		cal.val1 = 10;
+		cal.val2 = 20;
+		System.out.println(cal.add());
+	}
+
+}

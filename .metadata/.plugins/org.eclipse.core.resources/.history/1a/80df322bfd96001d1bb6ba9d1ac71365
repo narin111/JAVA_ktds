@@ -1,0 +1,70 @@
+package com.test03;
+
+import java.util.ArrayList;
+
+
+
+public class TestMain03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "1.22,4.12,5.93,8.71,9.34";
+		
+		// List = ;
+		
+		// List<double> array = new ArrayList<double>;
+		
+		//StringTokenizer 이용하여 List에 저장한다.
+		// list = StringTokenizer();
+		
+		//List에 저장된 데이터의 합과 평균을 구한다.
+	}
+
+}
+
+/**
+The string tokenizer class allows an application to break astring into tokens. The tokenization method is much simpler thanthe one used by the StreamTokenizer class. The StringTokenizer methods do not distinguish amongidentifiers, numbers, and quoted strings, nor do they recognizeand skip comments. 
+The set of delimiters (the characters that separate tokens) maybe specified either at creation time or on a per-token basis. 
+
+An instance of StringTokenizer behaves in one of twoways, depending on whether it was created with the returnDelims flag having the value trueor false: 
+•If the flag is false, delimiter characters serve toseparate tokens. A token is a maximal sequence of consecutivecharacters that are not delimiters. 
+•If the flag is true, delimiter characters are themselvesconsidered to be tokens. A token is thus either one delimitercharacter, or a maximal sequence of consecutive characters that arenot delimiters. 
+
+A StringTokenizer object internally maintains a currentposition within the string to be tokenized. Some operations advance thiscurrent position past the characters processed.
+
+A token is returned by taking a substring of the string that was used tocreate the StringTokenizer object. 
+
+The following is one example of the use of the tokenizer. The code: 
+
+     StringTokenizer st = new StringTokenizer("this is a test");
+     while (st.hasMoreTokens()) {
+         System.out.println(st.nextToken());
+     }
+ 
+
+prints the following output: 
+
+     this
+     is
+     a
+     test
+ 
+
+StringTokenizer is a legacy class that is retained forcompatibility reasons although its use is discouraged in new code. It isrecommended that anyone seeking this functionality use the splitmethod of String or the java.util.regex package instead. 
+
+The following example illustrates how the String.splitmethod can be used to break up a string into its basic tokens: 
+
+     String[] result = "this is a test".split("\\s");
+     for (int x=0; x<result.length; x++)
+         System.out.println(result[x]);
+ 
+
+prints the following output: 
+
+     this
+     is
+     a
+     test
+ 
+Since:1.0Author:unascribedSee Also:java.io.StreamTokenizer
+**/

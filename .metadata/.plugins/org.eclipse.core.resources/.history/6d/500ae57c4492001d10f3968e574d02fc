@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class DoWhileTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int input = 0;
+		Scanner sc = new Scanner(System.in);
+		// ctrl shift o
+		do {
+			input = System.in.read();
+			System.out.print((char)input);
+		} while(input!=-1 && input !='x');
+	}
+
+}

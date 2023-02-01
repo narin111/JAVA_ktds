@@ -1,0 +1,6 @@
+package com.kt.entity;
+
+public class Product {
+	int price;
+	
+}

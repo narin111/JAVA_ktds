@@ -1,0 +1,12 @@
+class Test{
+	void tfunc1() {}
+	static void tfunc2(){}
+}
+public class ClassTest2 {
+	public void func1() {}
+	public static void fun2() {}
+	public static void main(String[] args) {
+		
+		
+	}
+}

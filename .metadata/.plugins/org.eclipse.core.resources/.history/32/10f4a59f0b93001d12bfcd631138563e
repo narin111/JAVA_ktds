@@ -1,0 +1,17 @@
+package com.kt.entity;
+
+public class Gogak {
+	private int money;
+	private Product[] basket = new Product[5];
+	private int count;
+	public Gogak(int money) {
+		this.money = money;
+	}
+	
+	public void addProduct(Product product) {
+		if(money<product.getPrice()) {
+			System.out.println("잔액부족");
+			return;
+		}
+	}
+}
